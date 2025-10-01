@@ -32,8 +32,8 @@
                     <cloudHubDeployment>
                         <username>$Bhushan115</username>
                         <password>$Bhushan@11</password>
-                        <environment>${anypoint.environment}</environment>
-                        <applicationName>${anypoint.applicationName}</applicationName>
+                        <environment>Sandbox</environment>
+                        <applicationName>Atlas</applicationName>
                     </cloudHubDeployment>
                 </configuration>
             </plugin>
