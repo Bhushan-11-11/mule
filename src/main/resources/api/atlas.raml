@@ -1,0 +1,39 @@
+#%RAML 1.0
+title: atlas
+baseUri: http://localhost:8081/atlas
+/get-employee/{id}:
+  uriParameters:
+    id:
+      required: true
+      type: integer
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "id": 100,
+            "name": "john",
+            "email" :"john@gmail.com",
+            "phone" :1234567890,
+            "address" :"NYC"
+              }
+      400:
+        body:
+          application/json:
+            example:
+              {
+                "status" : 404,
+                "message" : "No employee found"
+              }
+      500:
+        body:
+          application/json:
+            example:
+              {
+                
+              }
+              
+            
+    
